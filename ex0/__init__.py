@@ -5,5 +5,4 @@ __author__ = "gtourdia"
 
 from ex0.CreatureCard import CreatureCard
 from ex0.Card import Card
-Requirements
 __all__ = ["Card", "CreatureCard"]
