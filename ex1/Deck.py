@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 
-from ex0 import Card, CreatureCard
-from ex1 import ArtifactCard, SpellCard
+from ex0 import Card
 import random
 
 
@@ -24,18 +23,18 @@ class Deck:
     def suffle(self) -> None:
         random.shuffle(self._cards)
         return None
-    
+
     def draw_card(self) -> Card:
         for card in self._cards:
             match type(card).__name__:
                 case "CreatureCard":
-                    type = 'Creature'
+                    t = 'Creature'
                 case "ArtifactCard":
-                    type = 'Artifact'
+                    t = 'Artifact'
                 case "SpellCard":
-                    type = 'Spell'
-            print(f'Drew: {card._name} ({type})')
-            print('')
+                    t = 'Spell'
+            print(f'Drew: {card._name} ({t})')
+            print(f'Play result: {card.play({})}\n')
 
     def get_deck_stats(self) -> dict:
         creatures = 0

@@ -1,0 +1,10 @@
+
+Report python_m07
+
+Dans l'objet Card:
+    def play(self, game_state: dict) -> dict:
+    prend game_state en parametre, mais on n'a pas d'info sur ce que c'est,
+    et ce qu'on doit en faire
+
+Dans l'objet SpellCard:
+    Aucune infor sur ce que resolve_effect fait

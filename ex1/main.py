@@ -25,4 +25,4 @@ print(f'Deck stats: {deck.get_deck_stats()}')
 print('')
 
 print('Drawing and playing cards:')
-
+deck.draw_card()
