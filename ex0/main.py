@@ -42,7 +42,7 @@ print(f'Attack result: {fire_dragon.attack_target(goblin_warrior)}')
 print('')
 
 mana = 3
-print(f'Testing insufficient mana ({mana}) available')
+print(f'Testing insufficient mana ({mana} available)')
 print(f"Playable: {fire_dragon.is_playable(mana)}")
 
 print('')
