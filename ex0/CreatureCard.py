@@ -43,7 +43,7 @@ class CreatureCard(Card):
             'effect': 'Creature summoned to battlefield'
             }
 
-    def attack_target(self, target: "CreatureCard"):
+    def attack_target(self, target: "CreatureCard") -> dict:
         return {
             'attacker': self._name,
             'target': target._name,
