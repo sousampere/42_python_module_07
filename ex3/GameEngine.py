@@ -2,8 +2,10 @@
 
 from ex3 import CardFactory, GameStrategy
 
+
 class GameEngine:
-    def configure_engine(self, factory: CardFactory, strategy: GameStrategy) -> None:
+    def configure_engine(self, factory: CardFactory,
+                         strategy: GameStrategy) -> None:
         self._factory = factory
         self._strategy = strategy
         self._turns = 0

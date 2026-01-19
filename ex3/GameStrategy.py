@@ -15,4 +15,3 @@ class GameStrategy(ABC):
     @abstractmethod
     def prioritze_targets(self, available_targets: list) -> list:
         pass
-

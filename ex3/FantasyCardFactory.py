@@ -26,7 +26,8 @@ class FantasyCardFactory(CardFactory):
         self._cards.append(card)
         return (card)
 
-    def create_themed_deck(self, name_or_power: str | int | None = None) -> Card:
+    def create_themed_deck(self,
+                           name_or_power: str | int | None = None) -> Card:
         card = CreatureCard(name_or_power, 1, 'Legendary', 1, 20)
         self._cards.append(card)
         return (card)
