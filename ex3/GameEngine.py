@@ -25,6 +25,7 @@ class GameEngine:
             dict['cards_played'].append(play['card_played'])
             dict['mana_used'] += play['mana_used']
         print(f"Actions: {dict}")
+        self._turns += 1
         return dict
 
     def get_engine_status(self) -> dict:
