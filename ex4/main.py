@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 
-
 from ex4 import TournamentCard, TournamentPlatform
 
 
@@ -51,7 +50,8 @@ print("Tournament Leaderboard:")
 i = 1
 cards = platform.get_leaderboard()
 for card in cards:
-    print(f"{i}: {card._name} - Rating: {card._rating} ({card._wins}-{card._loses})")
+    print(f"{i}: {card._name} - Rating: {card._rating} ({
+        card._wins}-{card._loses})")
     i += 1
 
 print('')

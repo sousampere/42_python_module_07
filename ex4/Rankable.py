@@ -22,7 +22,7 @@ class Rankable(ABC):
     def update_loses(self, loses: int) -> None:
         self._loses = loses
         return None
-    
+
     @abstractmethod
     def get_rank_info(self) -> dict:
         pass

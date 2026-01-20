@@ -7,7 +7,8 @@ from abc import ABCMeta
 
 
 class TournamentCard(Card, Combatable, Rankable, metaclass=ABCMeta):
-    def __init__(self, name: str, cost: int, rarity: str, wins: int, loses: int, rating: int, id: str):
+    def __init__(self, name: str, cost: int,
+                 rarity: str, wins: int, loses: int, rating: int, id: str):
         super().__init__(name, cost, rarity)
         self.update_wins(wins)
         self.update_loses(loses)
@@ -19,22 +20,22 @@ class TournamentCard(Card, Combatable, Rankable, metaclass=ABCMeta):
 
     def attack(self, target) -> dict:
         return super().attack(target)
-    
+
     def defend(self, incoming_damage):
         return super().defend(incoming_damage)
 
     def calculate_rating(self) -> int:
         return self._rating
-    
+
     def get_combat_stats(self):
         return super().get_combat_stats()
-    
+
     def get_rank_info(self):
         return super().get_rank_info()
-    
+
     def update_loses(self, loses):
         return super().update_loses(loses)
-    
+
     def update_wins(self, wins):
         return super().update_wins(wins)
 
