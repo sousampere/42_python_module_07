@@ -11,9 +11,9 @@ print('=== DataDeck Deck Builder ===')
 print('')
 
 print('Building deck with different card types...')
-spell = SpellCard('Lightning Bolt', 4,
+spell = SpellCard('Lightning Bolt', 3,
                   'rare', 'Deal 3 damage to target')
-artifact = ArtifactCard('Mana crystal', 4, 'rare',
+artifact = ArtifactCard('Mana crystal', 2, 'rare',
                         4, 'Permanent: +1 mana per turn')
 creature = CreatureCard('Fire Dragon', 5, 'Legendary', 3, 5)
 deck = Deck()
@@ -24,5 +24,7 @@ print(f'Deck stats: {deck.get_deck_stats()}')
 
 print('')
 
-print('Drawing and playing cards:')
+print('Drawing and playing cards:\n')
 deck.draw_card()
+
+print('Polymorphism in action: Same interface, different card behaviors!')

@@ -18,12 +18,14 @@ class GameEngine:
         dict = {
             'cards_played': [],
             'mana_used': 0,
-            'targets_attacked': 'Enemy Player'
+            'targets_attacked': 'Enemy Player',
+            'damage_dealt': 0
         }
         for card in self._factory._cards:
             play = card.play({})
             dict['cards_played'].append(play['card_played'])
             dict['mana_used'] += play['mana_used']
+            dict['damage_dealt'] = self._damage
         print(f"Actions: {dict}")
         self._turns += 1
         return dict

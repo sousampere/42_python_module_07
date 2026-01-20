@@ -40,9 +40,12 @@ class TournamentPlatform:
         return self._cards
 
     def generate_tournament_report(self) -> dict:
+        sum = 0
+        for card in self._cards:
+            sum += card._rating
         return {
             'total_cards': len(self._cards),
             'matches_played': self._matches,
-            'winner_rating': self.get_leaderboard()[0]._rating,
-            'loser_rating': self.get_leaderboard()[-1]._rating,
+            'avg_rating': sum / len(self._cards),
+            'platform_status': 'active',
         }

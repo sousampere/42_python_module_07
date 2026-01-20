@@ -15,7 +15,7 @@ class TournamentCard(Card, Combatable, Rankable, metaclass=ABCMeta):
         self._rating = rating
         self._id = id
 
-    def play(self, game_state) -> dict:
+    def play(self, game_state: dict) -> dict:
         return super().play(game_state)
 
     def attack(self, target) -> dict:
