@@ -5,7 +5,7 @@ from abc import ABC, abstractmethod
 
 class Rankable(ABC):
     @abstractmethod
-    def __init__(self) -> int:
+    def __init__(self):
         self._wins = 0
         self._loses = 0
 
